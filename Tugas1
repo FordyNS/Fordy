@@ -1,0 +1,49 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+import java.util.Scanner;
+class Nama {
+    String nama;
+    String nilai;
+    int nilai1;
+}
+class Main {
+    public static void main(String[] args) {
+
+    Scanner objek = new Scanner(System.in);
+    Nama objekNama = new Nama();
+    
+    System.out.println("Masukkan Nama = ");
+    objekNama.nama = objek.nextLine();
+    System.out.println("Masukkan Nilai = ");
+    objekNama.nilai1 = objek.nextInt();
+    
+    System.out.println("Nama = " + objekNama.nama);
+    System.out.println("Nilai = " + objekNama.nilai1);
+    
+    if (objekNama.nilai1 <= 80-100) {
+        System.out.println("Grade Anda A dengan Bobot 4.00");
+    }
+    else if (objekNama.nilai1 >= 75) {
+        System.out.println("Grade Anda A- dengan Bobot 3.75");
+    }
+    else if (objekNama.nilai1 >= 70) {
+        System.out.println("Grade Anda B+ dengan Bobot 3.50");
+    }
+    else if (objekNama.nilai1 >= 65) {
+        System.out.println("Grade Anda B dengan Bobot 3.00");
+    }
+    else if (objekNama.nilai1 >= 55) {
+        System.out.println("Grade Anda C dengan Bobot 2.00");
+    }
+    else if (objekNama.nilai1 >= 30) {
+        System.out.println("Grade Anda D dengan Bobot 1.00");
+    }
+    else if (objekNama.nilai1 >= 0) {
+        System.out.println("Grade Anda E dengan Bobot 0.00");
+    }
+    else {
+        System.out.println("Grade Anda T dengan Bobot 0.00");
+    }
+}
+}
